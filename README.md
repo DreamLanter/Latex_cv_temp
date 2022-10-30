@@ -24,6 +24,6 @@ make
 
 # LICENSE
 
-**cv_resume** © [DreamLanter](https://github.com/DreamLanter), Released under the [MIT](./LICENSE) License.`<br>`
+**cv_resume** © [DreamLanter](https://github.com/DreamLanter), Released under the [MIT](./LICENSE) License.
 
 > [DreamLanter Blog](https://dreamlanter.github.io) · GitHub [@DreamLanter](https://github.com/DreamLanter) · Twitter [@浮栅晶体管](https://twitter.com/codeNdyttl5)
