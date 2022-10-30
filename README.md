@@ -24,6 +24,6 @@ make
 
 # LICENSE
 
-**cv_resume** © [geekplux](https://github.com/geekplux), Released under the [MIT](./LICENSE) License.<br>
+**cv_resume** © [DreamLanter](https://github.com/DreamLanter), Released under the [MIT](./LICENSE) License.`<br>`
 
-> [geekplux.com](http://geekplux.com) · GitHub [@geekplux](https://github.com/geekplux) · Twitter [@geekplux](https://twitter.com/geekplux)
+> [DreamLanter Blog](https://dreamlanter.github.io) · GitHub [@DreamLanter](https://github.com/DreamLanter) · Twitter [@浮栅晶体管](https://twitter.com/codeNdyttl5)
