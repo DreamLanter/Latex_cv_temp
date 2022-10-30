@@ -1,0 +1,234 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+
+\usepackage{xcolor}                 % replace by the encoding you are using
+\usepackage{xpatch}
+
+
+\setmainfont{Times New Roman}%缺省英文字体.serif是有衬线字体sans serif无衬线字体
+\setCJKmainfont[ItalicFont={Kai}, BoldFont={Hei}]{STSong}%衬线字体 缺省中文字体为
+\setCJKsansfont{STSong}
+\setCJKmonofont{STFangsong}%中文等宽字体
+%-----------------------xeCJK下设置中文字体------------------------------%
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song
+\newcommand{\song}{\CJKfamily{song}}
+\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs
+\newcommand{\fs}{\CJKfamily{fs}}
+\setCJKfamilyfont{yh}{Microsoft YaHei}                    %微软雅黑 yh
+\newcommand{\yh}{\CJKfamily{yh}}
+\setCJKfamilyfont{hei}{SimHei}                              %黑体  hei
+\newcommand{\hei}{\CJKfamily{hei}}
+\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh
+\newcommand{\hwxh}{\CJKfamily{hwxh}}
+\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong
+\newcommand{\asong}{\CJKfamily{asong}}
+\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei
+\newcommand{\ahei}{\CJKfamily{ahei}}
+\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai
+\newcommand{\akai}{\CJKfamily{akai}}
+
+
+%------------------------------设置字体大小------------------------%
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}         %四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号
+\newcommand{\subwuhao}{\fontsize{10pt}{\baselineskip}\selectfont}    %次五号
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
+
+
+%\usepackage{fontawesome}
+% \setCJKmainfont[BoldFont={WenQuanYi Micro Hei/Bold}]{WenQuanYi Micro Hei}
+%\defaultfontfeatures{Mapping=tex-text}
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue,roman]{hht}
+% character encoding
+
+
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{王辰翔}
+\familyname{}
+% \title{SanZhang}               % optional, remove the line if not wanted
+\address{河北省廊坊市三河市燕郊经济开发区}{}    % optional, remove the line if not wanted
+%\address{1990/11/11}{}    % optional, remove the line if not wanted
+\mobile{}                    % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{}                     % optional, remove the line if not wanted
+%\homepage{Blog: http://geekplux.com} % optional, remove the line if not wanted
+%\social[github]{GitHub: https://github.com/geekplux}
+\extrainfo{%
+  WeChat:  \\
+  QQ: 
+}
+
+\photo[64pt]{头像.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-14mm}
+
+% \section{工作经历}
+% \cventry{17.01-17.12}{不长不短的公司名称}{可爱的项目}{https://keaidexiangmu.com}{}{工作中，
+%   我负责了 xxx 的开发和维护，运用 yyy 技术解决了 zzz 的重大问题。积极参与开源社
+%   区贡献}
+% \cventry{16.01-16.12}{好长的公司名称}{有趣的项
+%   目}{http://www.youqudexiangmu.com}{}{工作中，我按照领导的要求编程，做出了让领
+%   导满意的作品，为公司做出了贡献。我觉得我还是凑字数吧，编不下去了}
+% \cventry{15.01-15.12}{不知道叫什么的公司名称}{不可告人的项
+%   目}{http://bukegaoren.com}{}{独立编写了根本编不下去的项目简介，可能还是凑字数
+%   比较好，来凑字数吧来凑字数吧来凑字数吧。出色的完成了凑字数的工作，并获得了最佳
+%   凑字数员工奖}
+\section{教育经历}
+\cventry{19.09-23.06}{本科}{华北科技学院}{软件工程}{}{}                % arguments 3 to 6 are optional
+\cvlistitem{专项奖学金}
+% \cvlistitem{最强编程大师金奖}
+% \cvlistitem{第 x 届「编程杯」gayhub 赛区一等奖}
+% \cvlistitem{国家奖学金/三好学生/学生会主席/\emph{获得女朋友一个}}
+% \cventry{15.09-18.06}{硕士}{和尚庙大学}{软件工程}{实验室 XXX 导师 XXX}{主要研究了
+%   人工智能，图形学，编译原理，机械键盘的拆装，快递包装的暴力拆解，颈椎与视觉保
+%   养，抹平小腹，治疗腰椎间盘突出}                % arguments 3 to 6 are optional
+\section{荣誉奖项}
+\cvitem{20.09}{华北科技学院第一十一届辩论赛三等奖}
+\cvitem{21.11}{}
+\cvitem{21.12}{2021年 IVRTC 全国三等奖}
+\cvitem{21.06}{2021年\mbox{ }\mbox{ }“挑战杯”\mbox{ }\mbox{ }河北省大学生课外学术科技作品竞赛二等奖}
+\cvitem{21.10}{2021年（第四届）全国大学生嵌入式芯片与系统设计竟赛北部赛区三等奖}
+\section{项目经历}
+% \subsection{科研项目}
+\cventry{21.06-21.07}{基于机器学习和混合现实平台的应急抢救机器人}{}{}{}{}
+\cvlistitem{负责开发 Unity 客户端程序与 HoloLens 2 混合现实部分}
+\cvlistitem{主要贡献：HoloLens 2 UI 界面设计、MRTK 对接、STM32 串口通信、机器人寻路控制与算法实现}
+\cvlistitem{成绩：全国大学生嵌入式芯片与系统设计竞赛北部赛区三等奖}
+\cventry{21.07-21.09}{基于FMA与深度学习的混合现实上肢康复训练评估系统}{}{}{}{}
+\cvlistitem{负责开发 Unity 客户端程序与 HoloLens 2 混合现实部分}
+\cvlistitem{主要贡献：HoloLens 2 UI界面设计、MRTK 对接、坐标传输协议实现、机器人寻路控制与算法实现、对接评估模型并可视化评估结果、交互逻辑控制}
+\cvlistitem{成绩：第九届全国大学生数字媒体科技作品及创意竞赛全国总决赛一等奖、 2021年第四届中国虚拟现实大赛全国一等奖}
+\cventry{21.10-21.11}{未来应急人}{}{}{}{}
+\cvlistitem{担任项目负责人，负责整体架构与主要程序开发}
+\cvlistitem{主要贡献：基于Steam VR与HTC VIVE套装开发UI设计、交互逻辑、动画控制}
+\cvlistitem{成绩：2021年 IVRTC 全国三等奖}
+\cventry{21.11-21.12}{软渲染}{}{}{}{}
+\cvlistitem{模仿OpenGL规则实现软渲染}
+\cvlistitem{已实现模型变换、视图变换、投影变换、视口变换、自制数学库、背面剔除、消隐算法、纹理映射}
+% \cvlistitem{成绩：全国大学生嵌入式芯片与系统设计竞赛北部赛区三等奖}
+% \subsection{开源项目}
+% \cvline{markvis}{在 markdown 中直接生成可视化图表的插件
+%   \emph{https://markvis.js.org} \textbf{GitHub 1000 stars}}
+% \cvline{netjsongraph.js}{用力导向图可视化出无线路由图谱数据 \emph{https://github.com/netjson/netjsongraph.js}}
+% \cvline{typing}{Hexo 静态博客主题 \emph{https://github.com/geekplux/hexo-theme-typing}}
+% \cvline{UnityVis}{Unity 中的基本可视化图表 \emph{https://github.com/geekplux/Basic-Visualization-in-Unity}}
+
+% \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+ \section{学校活动}
+ \cventry{20.09-21.06}{PC极客社}{副社长}{}{}{}
+ \cvlistitem{协调大数据协会共同举办2次“极客杯”编程大赛，参加人数约200人}
+ \cvlistitem{与摄影协会共同举办摄影展览，参与人数约300人}
+\section{技能与兴趣爱好}
+\cvline{\textbf{编程语言}}{熟练掌握\texttt{C\#}、\texttt{C/C++}、\texttt{Python}}
+\cvlistitem{熟悉\texttt{C/C++}基本语法，了解标准库的使用方法，掌握UE4下\texttt{C++}的用法}
+\cvline{\textbf{Unity}}{熟悉开发流程、交互逻辑控制、服务器通信、ShaderLab、能够进行 AR/VR/MR开发}
+\cvline{\textbf{虚拟现实}}{熟悉虚拟现实开发， 使用过 HTC VIVE 套装开发。 涉及 Steam VR、UI、Animation、粒子系统等}
+\cvline{\textbf{图形学}}{了解渲染管线、MVP 变换、背面剔除、齐次空间裁剪、消隐算法、纹理映射等}
+% \cvline{\textbf{数据}}{掌握处理数据，掌握数据库}
+\cvline{\textbf{兴趣爱好}}{绘画、音乐、游戏}
+
+% \section{Publications}
+% \cvline{已录用}{张三，李四，王麻子 基于 latex 的简历凑字数研究[C]// CVChina. 2017.}
+
+% \subsection{Vocational}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+% \section{Languages}
+% \cvlanguage{language 1}{Skill level}{Comment}
+% \cvlanguage{language 2}{Skill level}{Comment}
+% \cvlanguage{language 3}{Skill level}{Comment}
+
+% \section{Computer skills}
+% \cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+% \section{Interests}
+% \cvline{篮球}{\small 体力与技巧}
+% \cvline{hobby 2}{\small Description}
+% \cvline{hobby 3}{\small Description}
+
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% \begin{thebibliography}{}
+% \bibitem[]{} 移动增强现实可视化综述[C]. ChinaVis 2017.
+% \end{thebibliography}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-command-extra-options: "-shell-escape"
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
